@@ -57,7 +57,7 @@
 
 1. 克隆仓库：
 ```bash
-git clone https://github.com/yourusername/xss-scanner.git
+git clone https://github.com/achenc1013/XSS_Scanner.git
 cd xss-scanner
 ```
 
