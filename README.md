@@ -233,7 +233,7 @@ python main.py -u https://example.com --exclude "\.(jpg|css|js|png|gif)$"
 
 ## 联系方式
 
-- 项目链接: [https://github.com/yourusername/xss-scanner](https://github.com/yourusername/xss-scanner)
+- 项目链接: [https://github.com/achenc1013/XSS_Scanner](https://github.com/achenc1013/XSS_Scanner)
 - 联系邮箱: [1013199991@qq.com](1013199991@qq.com)
 
 ---
