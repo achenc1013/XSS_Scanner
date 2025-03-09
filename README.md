@@ -80,49 +80,49 @@ pip install webdriver-manager
 ### 基本用法
 
 ```bash
-python main.py -u https://example.com
+python xss_scanner.py -u https://example.com
 ```
 
 ### 更多示例
 
 **扫描单个URL**：
 ```bash
-python main.py -u https://example.com
+python xss_scanner.py -u https://example.com
 ```
 
 **扫描多个URL**：
 ```bash
-python main.py -f targets.txt
+python xss_scanner.py -f targets.txt
 ```
 
 **深度扫描**：
 ```bash
-python main.py -u https://example.com --scan-level 3
+python xss_scanner.py -u https://example.com --scan-level 3
 ```
 
 **只扫描XSS漏洞**：
 ```bash
-python main.py -u https://example.com --scan-type xss
+python xss_scanner.py -u https://example.com --scan-type xss
 ```
 
 **使用浏览器进行DOM XSS检测**：
 ```bash
-python main.py -u https://example.com --browser
+python xss_scanner.py -u https://example.com --browser
 ```
 
 **利用发现的漏洞**：
 ```bash
-python main.py -u https://example.com --exploit
+python xss_scanner.py -u https://example.com --exploit
 ```
 
 **生成HTML报告**：
 ```bash
-python main.py -u https://example.com -o report.html --format html
+python xss_scanner.py -u https://example.com -o report.html --format html
 ```
 
 **使用代理**：
 ```bash
-python main.py -u https://example.com --proxy http://127.0.0.1:8080
+python xss_scanner.py -u https://example.com --proxy http://127.0.0.1:8080
 ```
 
 ### 命令行参数
@@ -181,7 +181,7 @@ python main.py -u https://example.com --proxy http://127.0.0.1:8080
 创建一个文本文件，每行包含一个XSS有效载荷，然后使用`--custom-payloads`参数：
 
 ```bash
-python main.py -u https://example.com --custom-payloads my_payloads.txt
+python xss_scanner.py -u https://example.com --custom-payloads my_payloads.txt
 ```
 
 ### 漏洞利用
@@ -189,7 +189,7 @@ python main.py -u https://example.com --custom-payloads my_payloads.txt
 使用`--exploit`参数启用漏洞利用功能：
 
 ```bash
-python main.py -u https://example.com --exploit
+python xss_scanner.py -u https://example.com --exploit
 ```
 
 当发现漏洞时，扫描器将尝试进一步利用该漏洞，例如：
@@ -203,10 +203,10 @@ python main.py -u https://example.com --exploit
 
 ```bash
 # 只扫描/admin/路径下的URL
-python main.py -u https://example.com --include "^https://example.com/admin/.*"
+python xss_scanner.py -u https://example.com --include "^https://example.com/admin/.*"
 
 # 排除静态资源
-python main.py -u https://example.com --exclude "\.(jpg|css|js|png|gif)$"
+python xss_scanner.py -u https://example.com --exclude "\.(jpg|css|js|png|gif)$"
 ```
 
 ## 安全和免责声明
